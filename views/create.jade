@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    h1 Create
+
+    div.container
+        form(action='create' method='post')
+            div.form-group
+                label Id
+                input(type='number' name='noti_id')
+            div.form-group
+                label Number
+                input(type='number' name='number')
+            div.form-group
+                label Client
+                input(type='text' name='client')
+            div.form-group
+                label Product
+                input(type='text' name='product')
+            div.form-group
+                label Text
+                input(type='text' name='text')
+             button(type='submit').btn.btn-default Submit

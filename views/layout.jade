@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    block scripts
+  body
+    .container
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            a.navbar-brand Notification
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href="/notification/create") Create
+              li
+                a(href="/notification/show/Activas") Show
+              li
+                a(href="/notification/home") Change
+    block content

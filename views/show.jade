@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div.container-fluid
+        div.row
+            div.col-md-4.text-center
+                a.btn.btn-default(href="/notification/show/Activas") Activas
+            div.col-md-4.text-center
+                a.btn.btn-default(href="/notification/show/Proceso") Proceso
+            div.col-md-4.text-center
+                a.btn.btn-default(href="/notification/show/Concluidas") Concluidas
+            .row
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            .panel-title Notifications
+                        #notifications.panel-body
+block scripts
+    script(src="https://code.jquery.com/jquery-3.0.0.min.js")
+    script.
+        var status = !{JSON.stringify(status)}
+    script(src="/javascripts/NotiDetails.js").
